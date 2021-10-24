@@ -10,7 +10,7 @@ def generate_keccak256(sign: str) -> str:
     return hash
 
 
-class TestHighGasAgent:
+class TestHighTransfersAgent:
 
     def test_returns_empty_findings_if_comp_below_threshold(self):
         data = eth_abi.encode_abi(["uint256"], [TRANSACTION_SIZE_TH - 1])
